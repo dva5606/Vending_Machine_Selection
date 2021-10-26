@@ -1,10 +1,10 @@
 input.onButtonPressed(Button.A, function () {
-    radio.sendString("Peach")
-})
-radio.onReceivedString(function (receivedString) {
-    basic.showNumber(0)
+    let PEACH = 0
+    radio.sendString("" + (PEACH))
 })
 input.onButtonPressed(Button.B, function () {
-    radio.sendString("Mango")
+    let MANGO = 0
+    radio.sendString("" + (MANGO))
 })
+basic.showIcon(IconNames.Duck)
 radio.setGroup(69)
