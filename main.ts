@@ -6,24 +6,24 @@ input.onButtonPressed(Button.A, function () {
 })
 radio.onReceivedString(function (receivedString) {
     if (receivedString == "PEACH") {
-        if (PEACH == true) {
-            PEACH = false
-        } else if (PEACH == false) {
-            PEACH = true
+        if (Grape__Strawberry == true) {
+            Grape__Strawberry = false
+        } else if (Grape__Strawberry == false) {
+            Grape__Strawberry = true
         }
     }
     if (receivedString == "MANGO") {
-        if (MANGO == true) {
-            MANGO = false
-        } else if (MANGO == false) {
-            MANGO = true
+        if (Peach__Wild_Berry == true) {
+            Peach__Wild_Berry = false
+        } else if (Peach__Wild_Berry == false) {
+            Peach__Wild_Berry = true
         }
     }
 })
 input.onButtonPressed(Button.B, function () {
     radio.sendString("MANGO")
 })
-let MANGO = false
-let PEACH = false
+let Peach__Wild_Berry = false
+let Grape__Strawberry = false
 basic.showIcon(IconNames.Duck)
 radio.setGroup(69)
