@@ -6,10 +6,10 @@ input.onButtonPressed(Button.A, function () {
 })
 radio.onReceivedString(function (receivedString) {
     if (receivedString == "PEACH") {
-        if (Grape__Strawberry == true) {
-            Grape__Strawberry = false
-        } else if (Grape__Strawberry == false) {
-            Grape__Strawberry = true
+        if (Cherry__Watermelon == true) {
+            Cherry__Watermelon = false
+        } else if (Cherry__Watermelon == false) {
+            Cherry__Watermelon = true
         }
     }
     if (receivedString == "MANGO") {
@@ -24,6 +24,6 @@ input.onButtonPressed(Button.B, function () {
     radio.sendString("MANGO")
 })
 let Peach__Wild_Berry = false
-let Grape__Strawberry = false
+let Cherry__Watermelon = false
 basic.showIcon(IconNames.Duck)
 radio.setGroup(69)
